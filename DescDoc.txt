@@ -1,0 +1,16 @@
+chapters: is just groups extensions, or regional groups
+projects:
+contacts go in help sublist
+
+The search result should be categorized as 
+From NDC Hub
+From Google
+From Facebook
+From Instagram
+From Snapchat
+From From twitter
+
+Login as Executive
+Login as regular Member
+
+All members, both Executives and regulars earn points through hub activities and donations

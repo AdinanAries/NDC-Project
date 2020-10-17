@@ -159,7 +159,7 @@ header {
   overflow: hidden;
 }
 #other_stuff_container {
-  background: linear-gradient(160deg, rgb(192, 233, 252), rgb(10, 53, 82));
+  background: linear-gradient(160deg, rgb(201, 238, 255), rgb(4, 48, 77));
 }
 #latest_news_display {
   display: flex;
