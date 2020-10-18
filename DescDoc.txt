@@ -1,3 +1,4 @@
+**Most organization should have a hub of this sort to help people find things specific to thier organization
 chapters: is just groups extensions, or regional groups
 projects:
 contacts go in help sublist
@@ -17,6 +18,7 @@ Party Credits:
 disclamer: Your donations are not investments, instead it puts you in a better position to prove your status to earn party recognition and be able to aply for use of party resources and projects
 
 credit metric
+when you create new account you get 20points by default
 Chapter president ->
 when you create a group and are able to reach up to 10 members (5+p)
 when your group reaches 50 members(10+p)
