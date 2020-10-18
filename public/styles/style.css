@@ -9,6 +9,9 @@ body {
   /*background-color: #076951;*/
   background-color: #f7f7f7;
 }
+input:focus {
+  outline: none;
+}
 .wrapper {
   max-width: 1300px;
   margin: auto;
@@ -28,12 +31,16 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+.search_area {
+  position: relative;
+  width: 55%;
+  margin: auto;
+}
 .search_box {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  width: 55%;
   background-color: white;
   height: 45px;
   border-radius: 5px;
@@ -53,6 +60,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.search_box_suggestions {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  margin-top: -5px;
+  border-top: 1px solid #d4d3d3;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
 }
 .header_settings_area {
   margin: auto;
@@ -109,6 +128,7 @@ header {
   display: inline;
   padding: 20px;
   cursor: pointer;
+  position: relative;
 }
 .top_links li:hover {
   background-color: #eee;
@@ -116,6 +136,17 @@ header {
 .top_links i {
   margin-right: 5px;
   /*color: #076951;*/
+}
+.top_links_submenu {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.13),
+    0px 0px 2.9px rgba(0, 0, 0, 0.11);
+  background-color: white;
 }
 .show_case_photo {
   /*box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
