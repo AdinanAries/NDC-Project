@@ -26,12 +26,12 @@
             <div class='header_content_container'>
                 <div class="search_area">
                  <div class="search_box">
-                    <input type="text" placeholder="search the hub" />
+                    <input id="main_search_input_fld" type="text" placeholder="search the hub" />
                     <div class="seach_btn">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </div>
                   </div>
-                  <div class="search_box_suggestions"></div>
+                  <div id="mainsearch_area_suggestions_div" class="search_box_suggestions"></div>
                 </div>
                 <div class="header_settings_area">
                     <div class="each_setting_btn_container">
@@ -101,9 +101,9 @@
     <main>
       <div class="wrapper">
         <ul class="top_links">
-          <li>
+          <li id="registration_top_link">
             <i class="fa fa-user-plus" aria-hidden="true"></i>Resgistration
-            <div class="top_links_submenu"></div>
+            <div id="registration_top_link_submenu" class="top_links_submenu"></div>
           </li>
           
           <li>
@@ -112,14 +112,15 @@
           <li><i class="fa fa-users" aria-hidden="true"></i>Meetings</li>
           <li><i style="font-size: 15px;" class="fa fa-folder" aria-hidden="true"></i>Projects</li>
           <li><i  class="fa fa-list" aria-hidden="true"></i>Chapters</li>
-          <li style="color:rgb(31, 109, 0); margin-left: 40px;">
+          <li id="help_and_support_top_link" style="color:rgb(31, 109, 0); margin-left: 40px;">
             <i style="color:rgb(31, 109, 0); font-size: 15px;" class="fa fa-info" aria-hidden="true"></i>Help and Support
-        </li>
+            <div id="help_and_support_top_link_submenu" class="top_links_submenu"></div>
+          </li>
           <li style="color: #e02626"><i style="color: #e02626" class="fa fa-newspaper-o" aria-hidden="true"></i>NDC news</li>
         </ul>
         <div class="main_menu">
           <div class="main_menu_itemset">
-            <div style="width: 49%" class="main_menu_item" id="latest_news_display">
+            <div class="main_menu_item news_item" id="latest_news_display">
               <div id="latest_news_buttons">
                   <div id="lastes_news_prev_and_next_btn">
                     <i id="lastes_news_prev_btn" class="fa fa-angle-left" aria-hidden="true"></i>
@@ -132,9 +133,13 @@
                             <span><img id="latest_news_media_icon" src="pictures/tv3Icon.jpg" alt=""></span>
                             <span>TV3 GH</span> <span>- august 21st</span>
                         </p>
-                        <p>
-                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                        </p>
+                        <div class="event_post_menu_icon">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <div class="small_options_div">
+                            <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                            <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                          </div>
+                      </div>
                     </div>
                 </div>
               </div>
@@ -155,11 +160,64 @@
                     </div>
                     <div class="event_post_menu_icon">
                         <i class="fa fa-ellipsis-h"></i>
+                        <div class="small_options_div">
+                          <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                          <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                        </div>
                     </div>
                    </div>
               </div>
             </div>
             <div id="other_stuff_container" class="main_menu_item">
+              <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between; padding: 10px;">
+                  <p style="font-size: 13px; color: white;">
+                    Members stats
+                    <i style="margin-left: 10px;" class="fa fa-angle-right" aria-hidden="true"></i>
+                  </p>
+                  <div style="font-size: 13px; width: 20px; color: white; position: relative;">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    <div class="small_options_div">
+                      <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                      <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="other_stuff_container_info">
+                  <p><span style="font-weight: bolder;">New York:</span> 10 chapters, 10024 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 100%;"></div>
+                  </div>
+                  <p><span style="font-weight: bolder;">London:</span> 7 chapters, 10000 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 90%;"></div>
+                  </div>
+                  <p><span style="font-weight: bolder;">Paris:</span> 8 chapters, 9986 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 85%;"></div>
+                  </div>
+                  <p><span style="font-weight: bolder;">California:</span> 5 chapters, 8099 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 60%;"></div>
+                  </div>
+                  <p><span style="font-weight: bolder;">Washington DC:</span> 5 chapters, 7957 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 55%;"></div>
+                  </div>
+                  <p><span style="font-weight: bolder;">Berlin:</span> 3 chapters, 6498 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 40%;"></div>
+                  </div>
+                  <p><span style="font-weight: bolder;">Roma:</span> 3 chapters, 5453 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 30%;"></div>
+                  </div>
+                  <p><span style="font-weight: bolder;">Barcelona:</span> 2 chapters, 4356 Members</p>
+                  <div class="chart_bar">
+                    <div style="width: 25%;"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="main_menu_itemset">
@@ -179,6 +237,10 @@
                       </div>
                       <div class="event_post_menu_icon">
                           <i class="fa fa-ellipsis-h"></i>
+                          <div class="small_options_div">
+                            <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                            <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                          </div>
                       </div>
                      </div>
                 </div>
@@ -199,6 +261,10 @@
                       </div>
                       <div class="event_post_menu_icon">
                           <i class="fa fa-ellipsis-h"></i>
+                          <div class="small_options_div">
+                            <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                            <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                          </div>
                       </div>
                      </div>
                 </div>
@@ -219,6 +285,10 @@
                       </div>
                       <div class="event_post_menu_icon">
                           <i class="fa fa-ellipsis-h"></i>
+                          <div class="small_options_div">
+                            <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                            <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                          </div>
                       </div>
                      </div>
                 </div>
@@ -239,16 +309,48 @@
                       </div>
                       <div class="event_post_menu_icon">
                           <i class="fa fa-ellipsis-h"></i>
+                          <div class="small_options_div">
+                            <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                            <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                          </div>
                       </div>
                      </div>
                 </div>
             </div>
           </div>
           <div class="main_menu_itemset">
-            <div class="main_menu_item"></div>
-            <div class="main_menu_item"></div>
-            <div class="main_menu_item"></div>
-            <div class="main_menu_item"></div>
+            <div style="background-image: url('./pictures/photogallery.jpg')" class="main_menu_item gallery_item">
+              <div class="photo_gallery_nav">
+                <p style="margin-bottom: 10px; color: rgb(97, 255, 195);">Gallery Photo</p>
+                <h1>John and Jane</h1>
+                <div style="display: flex; justify-content: space-between;">
+                  <p>April 23, 2020 - Asokore Mampong</p>
+                  <div class="event_post_menu_icon">
+                    <i class="fa fa-ellipsis-h"></i>
+                    <div class="small_options_div">
+                        <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                        <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="background-image: url('./pictures/photogallery2.jpg')" class="main_menu_item gallery_item">
+              <div class="photo_gallery_nav">
+                <p style="margin-bottom: 10px; color: rgb(97, 255, 195);">Gallery Photo</p>
+                <h1>John Dramani Mahama</h1>
+                <div style="display: flex; justify-content: space-between;">
+                  <p>April 27, 2020 - Nungua District</p>
+                  <div class="event_post_menu_icon">
+                    <i class="fa fa-ellipsis-h"></i>
+                    <div class="small_options_div">
+                        <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                        <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
