@@ -1,3 +1,11 @@
+Tech is the future, This product is a way to virtualize party various party activities for improved analytical possibilities, organzed party structure,
+centralized data storage, secure virtual party meetings, pulls any party info information from the web which helps catch misinformation by adverseries
+A platform for party members to build their party credit so that party can trust its members, A platform to find talents within the party, A platform for 
+Party executives to see parties well doing based on statistical data, Easy search of party members when they claim so with their party credits to indicate
+thier dedication to the party, A medium for expansion. Platform encourages party members to donate and participate in party activities as they gain points 
+for such efforts,
+
+
 **Most organization should have a hub of this sort to help people find things specific to thier organization
 chapters: is just groups extensions, or regional groups
 projects:
@@ -26,6 +34,7 @@ each meeting you host(+5)
 
 each meeting attendance earns you 2 points
 $1 for 1 point.
+each site visit for members is 1+ point
 
 All Executives already get about: 10000 points, 1000points means Party Star(ps), 10000points party unicorn(pu)
 All members, both Executives and regulars earn points through hub activities and donations
