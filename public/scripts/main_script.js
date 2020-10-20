@@ -28,3 +28,14 @@ help_and_support_top_link.addEventListener("mouseover", ()=>{
 help_and_support_top_link.addEventListener("mouseout", ()=>{
     help_and_support_top_link_submenu.style.display = "none";
 });
+
+function show_submenu(name, number){
+    let elem = name + number;
+    document.getElementById(elem).style.display = "block";
+
+}
+function hide_submenu(name, number){
+    let elem = name + number;
+    document.getElementById(elem).style.display = "none";
+    
+}

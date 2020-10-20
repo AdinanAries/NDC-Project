@@ -58,11 +58,18 @@
                             </div>
                             <i id="header_trophy_icon" class="fa fa-trophy" aria-hidden="true"></i>
                         </div>
-                        <div style="margin-left: 30px;">
+                        <div onclick="show_submenu('header_right_menu', '')" style="margin-left: 30px;">
                             <i id="header_menu_bar_icon" class="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div id="header_right_menu"></div>
+                    <div id="header_right_menu">
+                        <div style="display: flex; padding: 5px; padding-right: 10px; justify-content: flex-end;">
+                            <p style="width: 25px; display: flex; flex-direction: column; justify-content: center;
+                            height: 25px; border-radius: 100%; box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.2), 0px 0px 2.9px rgba(0, 0, 0, 0.23); text-align: center;">
+                                <i style="color: #7e7e7e; font-size: 12px;" onclick="hide_submenu('header_right_menu', '')" class="fa fa-caret-up" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,14 +107,43 @@
                         </a>
                         <div class="memeber_list_search_result_row">
                             <div class="each_member_search_result">
-                                <div class="each_member_search_result_profile_photo"></div>
-                                <div class="user_detials_search_result"></div>
+                                <div class="each_member_search_result_profile_photo">
+                                    <img src="pictures/Muntaka.jpg" />
+                                </div>
+                                <div class="user_detials_search_result">
+                                    <p style="color:rgb(27, 104, 3); font-weight: bolder;">Party Member</p>
+                                    <h1>Hon. Muntaka Mubarak</h1>
+                                    <p><i style="margin-left: 0;" class="fa fa-map-marker" aria-hidden="true"></i> Kumasi, GH</p>
+                                    <p>Party Unicorn 
+                                        <span><i class="fa fa-trophy" aria-hidden="true"></i> 194,732</span>
+                                    </p>
+                                </div>
                             </div>
                             <div class="each_member_search_result">
-                                <div class="each_member_search_result_profile_photo"></div>
+                                <div class="each_member_search_result_profile_photo">
+                                    <img src="pictures/Ras-Mubarak.jpg" alt="">
+                                </div>
+                                <div class="user_detials_search_result">
+                                    <p style="color:rgb(27, 104, 3); font-weight: bolder;">Party Member</p>
+                                    <h1>Hon. Ras. Mubarak</h1>
+                                    <p><i style="margin-left: 0;" class="fa fa-map-marker" aria-hidden="true"></i> Tamale, GH</p>
+                                    <p>Party Unicorn 
+                                        <span><i class="fa fa-trophy" aria-hidden="true"></i> 197,581</span>
+                                    </p>
+                                </div>
                             </div>
                             <div class="each_member_search_result">
-                                <div class="each_member_search_result_profile_photo"></div>
+                                <div class="each_member_search_result_profile_photo">
+                                    <img src="pictures/Asiedu Nketia4.jpg" alt="">
+                                </div>
+                                <div class="user_detials_search_result">
+                                    <p style="color:rgb(27, 104, 3); font-weight: bolder;">Party Member</p>
+                                    <h1>Hon. Asiedu Nkatia</h1>
+                                    <p><i style="margin-left: 0;" class="fa fa-map-marker" aria-hidden="true"></i> Accra, GH</p>
+                                    <p>Party Unicorn 
+                                        <span><i class="fa fa-trophy" aria-hidden="true"></i> 199,628</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
