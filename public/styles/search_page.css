@@ -11,6 +11,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+#home_page_link:hover {
+  text-decoration: none;
+}
 body {
   /*background-color: #076951;
   background-color: #f7f7f7;*/

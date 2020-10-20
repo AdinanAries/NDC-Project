@@ -21,15 +21,17 @@
         <div class="wrapper header_wrapper">
             <div class="header_flex_item header_first_flex_item">
                 <div>
-                    <div id="header_logo">
-                        <div>THE</div>
-                        <img src="pictures/ndclogo.svg.png" alt="">
-                        <div>HUB</div>
-                    </div>
+                    <a id="home_page_link" href="http://localhost:5001">
+                        <div id="header_logo">
+                            <div>THE</div>
+                            <img src="pictures/ndclogo.svg.png" alt="">
+                            <div>HUB</div>
+                        </div>
+                    </a>
                 </div>
                 <div id="header_search_and_submenu">
                     <div class="search_div">
-                        <input type="text" placeholder="search the hub" value="Who is the flag bearer of the NDC"/>
+                        <input id="main_search_input_fld" type="text" placeholder="search the hub" value=""/>
                         <div  id="main_search_btn">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
@@ -335,6 +337,7 @@
     <footer>
         <div class="wrapper"></div>
     </footer>
+    <script src="scripts/search_engine_script.js"></script>
     <script src="scripts/search_script.js"></script>
 </body>
 </html>

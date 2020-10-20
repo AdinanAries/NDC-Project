@@ -5,6 +5,14 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/search_engine/", (req, res)=>{
+  res.redirect(`/search_page.html?q=the ndc hub`);
+});
+
+app.get("/search_engine/:q", (req, res)=>{
+  res.redirect(`/search_page.html?q=${req.params.q}`);
+});
+
 const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
