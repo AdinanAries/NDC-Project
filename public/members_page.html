@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./styles/members_page.css"/>
+    <title>Party Member</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header_content">
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <div class="logo_and_search">
+                        <img src="pictures/ndclogo.svg.png" alt="">
+                        <div class="main_search_fld">
+                            <div style="display: flex;">
+                                <input type="text" placeholder="search" value=""/>
+                                <div><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: flex-end;">
+                    <div class="header_menu_icons">
+                        <ul>
+                            <li class="active">
+                                <div>
+                                    <p>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </p>
+                                    <p>Events</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                    </p>
+                                    <p>Contracts</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>
+                                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                    </p>
+                                    <p>NDC News</p>
+                                </div>
+                                <li>
+                                    <div>
+                                        <div style="position: relative">
+                                            <div style="right: 13px;" class="top_nav_activity_counter" >2</div>
+                                            <p><i class="fa fa-bell-o" aria-hidden="true"></i><p>
+                                        </div>
+                                        <p>Notifications</p>
+                                    </div>
+                                </li>
+                            </li>
+                            <li id="top_nav_points_section">
+                                <div style="position: relative;">
+                                    <div style="position: relative">
+                                        <div class="top_nav_activity_counter" >23k</div>
+                                        <p><i style="color: goldenrod" class="fa fa-trophy" aria-hidden="true"></i><p>
+                                    </div>
+                                    <p style="color: goldenrod">Unicorn</p>
+                                    <div class="top_nav_points_info_div">
+                                        <p>Your rank: <span>Party Unicorn</span></p>
+                                        <p>Your points: <span>23,424</span></p>
+                                        <p>Your competency: <span>88%</span></p>
+                                        <p>Party trust level: <span>95%</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: flex; justify-content: center; flex-direction: column;">
+                        <div class="header_profile_picture">
+                            <img src="./pictures/Ras-Mubarak.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="body_content">
+                <section class="left_section">
+                    <div class="left_profile_section section_card">
+                        <div class="left_profile_details">
+                            <div class="left_profile_details_photo">
+                                <div class="left_profile_cover">
+                                    <img src="./pictures/Ras-Mubarak.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h1>Hon. Ras. Mubarak</h1>
+                                    <p>Party Unicorn</p>
+                                    <p><i class='fa fa-trophy' aria-hidden="true"></i><span>23,424</span></p>
+                                    <p>Your competency: <span>88%</span></p>
+                                    <p><i class="fa fa-anchor" aria-hidden="true"></i> <span>95%</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="middle_section">
+                    <div class="section_card post_section_card">
+                        <div class="post_section_main_field">
+                            <b><p><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Post an item</p></b>
+                        </div>
+                        <div class="post_card_sub_icons">
+                            <div class="post_section_sub_icon">
+                                <p>
+                                    <i style="font-weight: initial; color: rgb(84, 168, 154);" class="fa fa-users" aria-hidden="true"></i>
+                                    meeting
+                                </p>
+                            </div>
+                            <div class="post_section_sub_icon">
+                                <p>
+                                    <i style="color:rgb(84, 130, 168)" class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                    Event
+                                </p>
+                            </div>
+                            <div class="post_section_sub_icon">
+                                <p>
+                                    <i style="color:rgb(170, 106, 76)" class="fa fa-folder-o" aria-hidden="true"></i>
+                                    Project
+                                </p>
+                            </div>
+                            <div class="post_section_sub_icon">
+                                <p>
+                                    <i style="color:rgb(132, 76, 170)" class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                    News
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="margin: 15px 0; border: none; border-bottom: 1px solid #d3d3d3;">
+                    <div class="all_posts_container">
+                        <div class="section_card news_post_card">
+                            <div class="news_poster_details">
+                                <div class="news_poster_profile_pic">
+                                    <img src="pictures/Asiedu Nketia4.jpg" alt="">
+                                </div>
+                                <div class="news_poster_name_details_icon">
+                                    <div class="news_poster_name_detials">
+                                        <h1>Hon. Asiadu Nkatia</h1>
+                                        <p>Party General Secretary</p>
+                                        <div>
+                                            <div style="display: flex; margin-top: 4px;">
+                                                <p>october 12</p>
+                                                <i class="fa fa-circle time_date_visibility_separator" aria-hidden="true"></i>
+                                                 <p>11:45pm</p>
+                                                 <i  class="fa fa-circle time_date_visibility_separator" aria-hidden="true"></i>
+                                                 <i style="margin-top: -2px;" class="fa fa-globe" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="news_post_content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Voluptatem delectus mollitia animi labore ducimus aut consectetur beatae 
+                                    voluptatum in nulla cupiditate vitae
+                                </p>
+                                <img src="pictures/NDCMembers.jpg" alt="">
+                                <div class="current_interactions_count">
+                                    <div>
+                                        <i style="color:rgb(84, 130, 168)" class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                        <span>721</span>
+                                    </div>
+                                    <div>
+                                        <i style="color:rgb(84, 168, 154);" class="fa fa-commenting" aria-hidden="true"></i>
+                                        <span>49</span>
+                                    </div>
+                                    <div>
+                                        <i style="color:rgb(132, 76, 170)" class="fa fa-share" aria-hidden="true"></i>
+                                        <span>23</span>
+                                    </div>
+                                </div>
+                                <div class="post_interaction_buttons">
+                                    <div>
+                                        <b><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                        <span>Like</span></b>
+                                    </div>
+                                    <div style="margin-left: 30px;">
+                                        <b><i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                        <span>Comment</span></b>
+                                    </div>
+                                    <div style="margin-left: 30px;">
+                                        <b><i class="fa fa-share-square-o" aria-hidden="true"></i>
+                                        <span>Share</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_card">
+
+                        </div>
+                        
+                        <div class="section_card"></div>
+                        <div class="section_card"></div>
+                        <div class="section_card"></div>
+                    </div>
+                </section>
+                <section class="right_section ">
+                    <div class="section_card ads_section_card"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper"></div>
+    </footer>
+</body>
+</html>
