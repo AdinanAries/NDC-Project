@@ -59,7 +59,19 @@ header {
   background-color: white;
   padding: 4px;
   border-radius: 3px;
-  width: 40px;
+}
+.hub_logo {
+  background-color: rgb(29, 134, 117);
+  padding: 4px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo_and_search div {
+  font-weight: bolder;
+  color: white;
+  font-size: 19px;
 }
 .main_search_fld {
   padding: 0 10px;
@@ -75,6 +87,7 @@ header {
   background-color: rgb(207, 231, 236);
 }
 .main_search_fld i {
+  text-shadow: initial;
   font-size: 14px;
   color: #01633d;
   padding-top: -3px !important;
@@ -166,17 +179,46 @@ main {
 }
 .left_profile_section {
   min-height: 400px;
+  overflow: hidden;
 }
 .left_profile_details_photo {
   width: 60px;
   height: 60px;
+  border: 2px solid white;
   overflow: hidden;
   border-radius: 100%;
   margin: auto;
+  margin-top: -30px;
 }
 .left_profile_details_photo img {
   width: 60px;
   height: auto;
+}
+.left_profile_cover {
+  background-image: url("../pictures/ndc_cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -10px;
+  height: 70px;
+}
+.left_profile_details p {
+  margin: 5px;
+  font-size: 11px;
+}
+.left_profile_details span {
+  margin: 5px;
+  font-size: 11px;
+  margin-right: 12px;
+}
+.left_profile_details i {
+  font-size: 14px;
+  margin-right: 3px;
+  color: #777676;
+}
+.left_profile_details h1 {
+  font-size: 14px;
+  text-align: center;
+  margin: 5px 0;
 }
 .ads_section_card {
   min-height: 300px;
