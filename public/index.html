@@ -18,9 +18,62 @@
     <title>NDC HUB FOR DIASPORANS</title>
   </head>
   <body>
+    <div id="pop_up_page_cover" class="pop_up_page_cover">
+      
+    </div>
+    <div id="login_form_container" class="login_form_container">
+      <div style="display: flex; justify-content: flex-end; padding: 5px; padding-right: 20px; padding-top: 15px;">
+        <p id="hide_login_btn">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </p>
+      </div>
+      <div id="login_from_area">
+        <div id="login_area_title_section">
+          <h1 style="font-size: 15px; text-align: center; color:rgb(71, 71, 71);">
+            Login to Your Account 
+          </h1>
+        </div>
+        <div id="login_area_inputs">
+            <p>Email</p>
+              <input type="email" placeholder="enter your email">
+            <p>Password</p>
+              <input type="password" placeholder="enter your password">
+
+            <div id="login_area_login_btn">Login</div>
+        </div>
+      </div>
+    </div>
     <header>
-        <div style="position: absolute; right: 30px; top: 30px; color: white; font-weight: bolder; cursor: pointer;">
+        <div id="show_login_btn">
             <p style="font-size: 14px;"><i style="margin-right: 5px;" class="fa fa-sign-in" aria-hidden="true"></i>Login</p>
+        </div>
+        <div id="page_profile_avatar_and_menu">
+          <div id="top_profile_photo">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <img src="pictures/Ras-Mubarak.jpg" alt="">
+          </div>
+          <div id="top_right_pop_up_menu">
+            <div id="top_right_menu_list">
+                <div style="display: flex; border-bottom: 1px solid #d4d3d3; padding: 10px;">
+                  <div id="top_popup_profile_photo">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <img src="pictures/Ras-Mubarak.jpg" alt="">
+                  </div>
+                  <div>
+                    <h1>Hon. Ras. Mubarak</h1>
+                    <p style="padding:0; padding-top: 5px; font-size: 10px !important; color:rgb(8, 99, 72);">
+                      <i style="margin-right: 5px; font-size: 14px; color: #37b192;" class='fa fa-trophy' aria-hidden="true"></i>
+                      23,424
+                    </p>
+                  </div>
+                </div>
+                <!--p><i style="color: #be4747; margin-right: 5px;" class="fa fa-cog" aria-hidden="true"></i> Settings</p>
+                <p><i style="color: #47be86; margin-right: 5px;" class="fa fa-cog" aria-hidden="true"></i> Settings</p-->
+                <p><i style="color: #476dbe; margin-right:  10px; font-size: 18px;" class="fa fa-cog" aria-hidden="true"></i> Settings</p>
+                <p style="padding-top: 0;"><i style="color: #be9e47; margin-right: 10px; font-size: 18px;" class="fa fa-sign-out" aria-hidden="true"></i> logout</p>
+            </div>
+            <div id="go_to_profile_btn">Go to Profile</div>
+          </div>
         </div>
         <div class="wrapper">
             <div class='header_content_container'>
@@ -168,6 +221,30 @@
                    </div>
               </div>
             </div>
+            <div id="current_event_one" class="main_menu_item published_events">
+              <div class="published_event_photo">
+
+              </div>
+              <div class="published_event_description">
+                  <p style="color:rgb(25, 88, 0); font-weight: bolder;">upcoming event on March 13</p>
+                  <h1>NDC to organize another youth support program to help young member...</h1>
+                  <div class="event_post_person">
+                    <div style="display: flex;">
+                        <div class="event_post_person_pic">
+                            <img src="pictures/JM.jpg" alt="">
+                        </div>
+                        <div class="news_posted_by">posted by JM</div>
+                    </div>
+                    <div onmouseover="show_submenu('event_submenu_', 1)" onmouseout="hide_submenu('event_submenu_', 1)" class="event_post_menu_icon">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <div id="event_submenu_1" class="small_options_div">
+                          <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                          <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                        </div>
+                    </div>
+                   </div>
+              </div>
+          </div>
             <div id="other_stuff_container" class="main_menu_item">
               <div style="display: flex; flex-direction: column; justify-content: space-between;">
                 <div style="display: flex; justify-content: space-between; padding: 10px;">
@@ -223,7 +300,7 @@
                 </div>
                 <div class="published_event_description">
                     <p style="color:rgb(25, 88, 0); font-weight: bolder;">upcoming event on March 13</p>
-                    <h1>NDC to organize another youth support program to help young member gain more access to party resources</h1>
+                    <h1>NDC to organize another youth support program to help young member...</h1>
                     <div class="event_post_person">
                       <div style="display: flex;">
                           <div class="event_post_person_pic">
@@ -265,6 +342,30 @@
                      </div>
                 </div>
             </div>
+            <div id="current_event_one" class="main_menu_item published_events">
+              <div class="published_event_photo">
+
+              </div>
+              <div class="published_event_description">
+                  <p style="color:rgb(25, 88, 0); font-weight: bolder;">upcoming event on March 13</p>
+                  <h1>NDC to organize another youth support program to help young member...</h1>
+                  <div class="event_post_person">
+                    <div style="display: flex;">
+                        <div class="event_post_person_pic">
+                            <img src="pictures/JM.jpg" alt="">
+                        </div>
+                        <div class="news_posted_by">posted by JM</div>
+                    </div>
+                    <div onmouseover="show_submenu('event_submenu_', 1)" onmouseout="hide_submenu('event_submenu_', 1)" class="event_post_menu_icon">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <div id="event_submenu_1" class="small_options_div">
+                          <p><i class="fa fa-list" aria-hidden="true"></i>see more</p>
+                          <p><i class="fa fa-bookmark" aria-hidden="true"></i>save data</p>
+                        </div>
+                    </div>
+                   </div>
+              </div>
+          </div>
             <div  id="current_event_three" class="main_menu_item published_events">
                 <div class="published_event_photo">
 
@@ -380,5 +481,6 @@
     </footer>
     <script src="scripts/main_script.js"></script>
     <script src="scripts/search_engine_script.js"></script>
+    <script src="scripts/login_scripts.js"></script>
   </body>
 </html>

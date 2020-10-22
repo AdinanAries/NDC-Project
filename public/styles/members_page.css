@@ -277,39 +277,40 @@ main {
   font-size: 19px;
   margin-right: 5px;
 }
-.news_post_card {
+.news_post_card,
+.meeting_post_card {
   padding: 10px 0;
 }
-.news_poster_details {
+.poster_details {
   margin: 0 10px;
   display: flex;
   justify-content: space-between;
 }
-.news_poster_profile_pic {
+.poster_profile_pic {
   border-radius: 100%;
   background-color: #c0c0c0;
   overflow: hidden;
   height: 50px;
   width: 50px;
 }
-.news_poster_profile_pic img {
+.poster_profile_pic img {
   width: 50px;
   height: auto;
 }
-.news_poster_name_details_icon {
+.poster_name_details_icon {
   width: calc(100% - 65px);
   display: flex;
   justify-content: space-between;
 }
-.news_poster_name_detials h1 {
+.poster_name_detials h1 {
   color: #444444;
   font-size: 14px;
 }
-.news_poster_name_detials p {
+.poster_name_detials p {
   font-size: 10px;
   color: #777676;
 }
-.news_poster_name_detials i {
+.poster_name_detials i {
   color: #616161;
   font-size: 15px;
 }
@@ -353,6 +354,72 @@ main {
 }
 .post_interaction_buttons span {
   font-size: 14px;
+}
+.meeting_post_details {
+  margin: 10px;
+  padding: 10px;
+  /*border-top: 1px solid #d3d3d3;*/
+}
+.meeting_post_details p {
+  color: #4d4c4c;
+  font-size: 13px;
+  line-height: 19px;
+}
+.meeting_post_details i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.meeting_post_details h1 {
+  color: #914343;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.meeting_guest_list_details {
+  padding-top: 10px;
+}
+.meeting_guest_list_details h1 {
+  color: #01633d;
+  font-size: 13px;
+}
+.meeting_guest {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 3px;
+}
+.meeting_guest_icons {
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.see_meeting_guest_profile_btn {
+  border: 1px solid #355172;
+  border-radius: 3px;
+  font-size: 11px;
+  color: #355172;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.meeting_guest p {
+  font-size: 11px;
+  line-height: initial;
+}
+.meeting_guest h1 {
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+.meeting_guest_profile_photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+.meeting_guest_profile_photo img {
+  width: 40px;
+  height: auto;
 }
 .left_profile_siggested_chapter {
   margin: 10px 0;
