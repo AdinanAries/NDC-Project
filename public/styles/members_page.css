@@ -279,7 +279,8 @@ main {
 }
 .news_post_card,
 .meeting_post_card,
-.project_post_card {
+.project_post_card,
+.job_post_card {
   padding: 10px 0;
 }
 .poster_details {
