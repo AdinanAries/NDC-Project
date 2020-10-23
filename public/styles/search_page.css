@@ -14,10 +14,7 @@ a:hover {
 #home_page_link:hover {
   text-decoration: none;
 }
-body {
-  /*background-color: #076951;
-  background-color: #f7f7f7;*/
-}
+
 input:focus {
   outline: none;
 }
