@@ -278,7 +278,8 @@ main {
   margin-right: 5px;
 }
 .news_post_card,
-.meeting_post_card {
+.meeting_post_card,
+.project_post_card {
   padding: 10px 0;
 }
 .poster_details {
@@ -295,6 +296,7 @@ main {
 }
 .poster_profile_pic img {
   width: 50px;
+  min-height: 50px;
   height: auto;
 }
 .poster_name_details_icon {
@@ -420,6 +422,16 @@ main {
 .meeting_guest_profile_photo img {
   width: 40px;
   height: auto;
+}
+.project_post_details {
+  padding: 10px;
+  padding-bottom: 0;
+}
+.project_post_details p {
+  font-size: 13px;
+}
+.project_post_details h1 {
+  font-size: 14px;
 }
 .left_profile_siggested_chapter {
   margin: 10px 0;
