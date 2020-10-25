@@ -184,11 +184,13 @@ main {
 .left_profile_details_photo {
   width: 60px;
   height: 60px;
-  border: 2px solid white;
+  border: 3px solid white;
+  box-shadow: 0px 1.6px 1.6px rgba(0, 0, 0, 0.2),
+    0px 0px 1.9px rgba(0, 0, 0, 0.23);
   overflow: hidden;
   border-radius: 100%;
   margin: auto;
-  margin-top: -30px;
+  margin-top: -35px;
 }
 .left_profile_details_photo img {
   width: 60px;
@@ -199,7 +201,10 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -10px;
-  height: 70px;
+  height: 60px;
+}
+.left_profile_name_and_user_details {
+  padding-top: 15px;
 }
 .left_profile_details p {
   margin: 5px;
@@ -522,4 +527,83 @@ main {
   border-radius: 3px;
   background-color: #0e3c49;
   color: white !important;
+}
+.make_donations_div {
+  padding: 10px 0;
+}
+.make_donations_div h1 {
+  font-weight: lighter;
+  font-size: 15px;
+  margin-bottom: 1px;
+  text-align: center;
+  color: #355172;
+}
+.make_donations_div p {
+  font-size: 12px;
+  color: #727272;
+}
+.donations_points_calc_num {
+  border-top: 1px solid #d1d1d1;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+.donations_points_dollar_form {
+  padding: 10px;
+  padding-bottom: 0;
+}
+.donations_points_dollar_form p {
+  color: #4d4c4c;
+}
+.donations_points_dollar_form input[type="text"] {
+  font-size: 12px;
+}
+.pay_donation_input_btn_area {
+  width: fit-content;
+  margin: auto;
+  border: 1px solid #355172;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+.pay_donation_btn {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #355172;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-right: -1px;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+.footer_links {
+  border-top: 1px solid #d1d1d1;
+  padding: 10px;
+}
+.footer_links li {
+  display: inline;
+  padding-right: 15px;
+  font-size: 13px;
+  text-align: center;
+  color: #727272;
+}
+.footer_links a {
+  display: inline;
+  font-size: 13px;
+  text-align: center;
+  color: #727272;
+}
+.footer_links p {
+  display: inline;
+  font-size: 13px;
+  text-align: center;
+  color: #727272;
+}
+.footer_links span {
+  display: inline;
+  font-size: 13px;
+  text-align: center;
+  color: #727272;
 }
